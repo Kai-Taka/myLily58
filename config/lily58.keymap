@@ -58,23 +58,33 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        AOE4 {
+        gaming_layer {
             bindings = <
-&kp ESC    &kp F1  &kp F2  &kp F3        &kp F4        &kp F5                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                      &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp Q   &kp W   &kp E         &kp R         &kp T                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp A   &kp S   &kp D         &kp F         &kp G                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B   &kp LBKT    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp LEFT_WIN  &kp LEFT_ALT  &mo 4   &mo 4       &trans  &trans  &trans  &trans
+                           &kp LEFT_WIN  &kp LEFT_ALT  &mo 5   &mo 4       &trans  &trans  &trans  &trans
             >;
         };
 
-        aoe4-unit {
+        lAlt {
             bindings = <
-&kp ESC  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10                                                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp F11  &kp F12  &kp F13       &kp F14       &kp F15                                                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp F16  &kp F17  &kp F18       &kp F19       &kp F20                                                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp F21  &kp F22  &kp F23       &kp F24       &kp KP_RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp LEFT_WIN  &kp LEFT_ALT  &trans                    &trans                  &trans  &trans  &trans  &trans
+&trans  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(A)   &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)   &kp LA(LBKT)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans      &trans      &trans      &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        rAlt {
+            bindings = <
+&trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)   &kp RA(LBKT)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans      &trans      &trans      &trans          &trans  &trans  &trans  &trans
             >;
         };
     };
